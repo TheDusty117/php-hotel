@@ -91,16 +91,16 @@
 
         <tr> 
               <th><?php echo $key ?></th>
+
               <?php
-              foreach ($value as $hotel) :
+              foreach ($value as $el) :
               ?>
                 
-                <td><?php echo $hotel; ?></td>
+                <td><?php echo $el; ?></td>
 
               <?php
               endforeach;
               ?>
-
         </tr>
 
         <?php
@@ -109,6 +109,25 @@
         
 
       </tbody>
+
+
+      <!-- <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Descrizione</th>
+          <th scope="col">Parcheggio</th>
+          <th scope="col">Voto</th>
+          <th scope="col">Distanza</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+       
+
+      </tbody> -->
+
 
     </table>
   </div>
