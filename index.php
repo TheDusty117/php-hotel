@@ -55,28 +55,6 @@
 
 <body class="bg-primary">
 
-<?php
-foreach ($hotels as $key => $value) :
-?>
-
-<li> 
-    <ul>
-      <?php
-      foreach ($value as $hotel) :
-      ?>
-
-        <li><?php echo $hotel; ?></li>
-
-      <?php
-      endforeach;
-      ?>
-
-    </ul>
-</li>
-
-<?php
-endforeach;
-?>
 
 
 
@@ -105,29 +83,30 @@ endforeach;
 
       
       <tbody>
+      
 
-      <?php
-      foreach ($hotels as $chiave => $valore):
-      ?>
+        <?php
+        foreach ($hotels as $key => $value) :
+        ?>
 
-        <tr>
-          <th>
-            <?php
-            echo $chiave;
+        <tr> 
+              <th><?php echo $key ?></th>
+              <?php
+              foreach ($value as $hotel) :
               ?>
-          </th>
-          <td>blabla</td>
+                
+                <td><?php echo $hotel; ?></td>
+
+              <?php
+              endforeach;
+              ?>
+
         </tr>
 
-        <tr>
-          <th>2</th>
-          <td>blabla</td>
-        </tr>
-
-
-      <?php
-      endforeach
-      ?>  
+        <?php
+        endforeach;
+        ?>
+        
 
       </tbody>
 
